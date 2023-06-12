@@ -28,7 +28,7 @@ export const StyledEditorWrapper = styled.div`
 const cookie = new Cookie();
 const newsCookie = cookie.get("news_seen");
 
-const IndexPage = (data?: any) => {
+const EditorPage = (data?: any) => {
   const { isReady, query } = useRouter();
   const [showNews, setShowNews] = React.useState(false);
   const checkSession = useUser(state => state.checkSession);
@@ -67,4 +67,4 @@ const IndexPage = (data?: any) => {
   );
 };
 
-export default IndexPage;
+export default EditorPage;
